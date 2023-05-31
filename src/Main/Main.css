@@ -1,0 +1,308 @@
+.Main_Container {
+  height: 4418px;
+  width: auto;
+  margin: 0px auto;
+  border-radius: 0px;
+  background: #ffffff;
+}
+.Main_Container_UpperPart {
+  height: 1120px;
+  width: auto;
+  background: linear-gradient(
+    290.1deg,
+    #d6e6fe 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+  border-radius: 0px 0px 35px 35px;
+}
+.Main_Container_UpperPart_Bodymassicone {
+  height: 40px;
+  width: 40px;
+  margin: 32px auto !important;
+}
+.Main_Container_BodyMass_Text_Box {
+  height: 327px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px auto;
+}
+.Main_Container_UpperPart_Header_Text {
+  height: 159px;
+  width: 327px;
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #253347;
+}
+.Main_Container_UpperPart_Second_Text {
+  height: 144px;
+  width: 327px;
+
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #5e6e85;
+}
+
+.bmi_Calculator_Box {
+  height: 649px;
+  width: 328px;
+  border-radius: 16px;
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 16px 32px 56px 0px #8faecf40;
+  margin: 48px auto;
+}
+
+.bmi_Calculator_Header_Text {
+  height: 29px;
+  width: 253px;
+  margin: 0px auto;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #253347;
+}
+.bmi_Calculator_Metrics_Imperial_Box {
+  height: 31px;
+  width: 280px;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.bmi_Calculator_Metrics_Box {
+  height: 31px;
+  width: 128px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bmi_Calculator_Metric_Selector {
+  height: 31px;
+  width: 31px;
+  background: #345ff626;
+}
+.bmi_Calculator_Metric_Selector_Text {
+  height: 24px;
+  width: 50px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.bmi_Calculator_Imperial_Box {
+  height: 31px;
+  width: 128px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bmi_Calculator_Imperial_Selector {
+  height: 31px;
+  width: 31px;
+  background: linear-gradient(0deg, #d8e2e7, #d8e2e7),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  border: 1px solid #d8e2e7;
+}
+.bmi_Calculator_Imperial_Selector_Text {
+  height: 24px;
+  width: 63px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #253347;
+}
+.metric_Height_Weight_Indicator_Box {
+  height: 212px;
+  width: 280px;
+  margin: 0px auto;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.height_Metric_Box {
+  height: 98px;
+  width: 280px;
+}
+.height_Metric_Box_Header {
+  height: 21px;
+  width: 44px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5e6e85;
+}
+.height_Metric_Box_Cm_box {
+  height: 39px;
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+  padding: 20px 24px 20px 24px;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #d8e2e7, #d8e2e7);
+  border: 1px solid #d8e2e7;
+}
+.height_Metric_Box_Cm_Indicator {
+  height: 39px;
+  width: 230px;
+
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #253347;
+}
+.height_Metric_Box_Cm_Text {
+  height: 29px;
+  width: 35px;
+
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #345ff6;
+}
+
+.metric_Height_Weight_Indicator_second_Box {
+  height: 212px;
+  width: 280px;
+  margin: -100px auto;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weight_Metric_Box {
+  height: 98px;
+  width: 280px;
+}
+.weight_Metric_Box_Header {
+  height: 21px;
+  width: 44px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5e6e85;
+}
+.weight_Metric_Box_Cm_box {
+  height: 39px;
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+  padding: 20px 24px 20px 24px;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #d8e2e7, #d8e2e7);
+  border: 1px solid #d8e2e7;
+}
+.weight_Metric_Box_Cm_Indicator {
+  height: 29px;
+  width: 173px;
+
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #253347;
+}
+.weight_Metric_Box_Cm_Text {
+  height: 29px;
+  width: 35px;
+
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #345ff6;
+}
+
+.bmi_Result_Box {
+  height: 227px;
+  width: 220px;
+  margin: 24px auto;
+  border-radius: 16px;
+  padding: 32px;
+  background: linear-gradient(90deg, #345ff7 0%, #587dff 100%);
+}
+.bmi_Result_Box_Number_Box {
+  height: 85px;
+  width: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 8px;
+}
+.bmi_Result_Box_Header_text {
+  height: 24px;
+  width: 216px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.bmi_Result_Box_Number_text {
+  height: 53px;
+  width: 99px;
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #ffffff;
+}
+.bmi_Result_Box_Secondary_Text {
+  height: 84px;
+  width: 216px;
+  margin: 24px auto;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
