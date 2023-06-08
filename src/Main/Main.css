@@ -256,6 +256,216 @@
   color: #345ff6;
 }
 
+.imperial_Height_Weight_Indicator_Box {
+  height: 212px;
+  width: 280px;
+  margin: 0px auto;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imperial_Height_first_Box {
+  height: 98px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.imperial_Height_first_Box_Height_Header_Text {
+  height: 21px;
+  width: 44px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5e6e85;
+}
+
+.ft_In_Box {
+  height: 69px;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.imperial_Height_First_Box_Feet_Box {
+  height: 30px;
+  width: 80px;
+  border-color: linear-gradient(0deg, #d8e2e7, #d8e2e7),
+    linear-gradient(0deg, #ffffff, #ffffff);
+
+  border: 1px solid #d8e2e7;
+  border-radius: 12px;
+  padding: 20px 24px 20px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.feet_Number {
+  height: 29px;
+  width: 43px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #253347;
+}
+.feet_Text {
+  height: 29px;
+  width: 17px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #345ff6;
+}
+.imperial_Height_Second_Box_Feet_Box {
+  height: 30px;
+  width: 80px;
+  border-color: linear-gradient(0deg, #d8e2e7, #d8e2e7),
+    linear-gradient(0deg, #ffffff, #ffffff);
+
+  border: 1px solid #d8e2e7;
+  border-radius: 12px;
+  padding: 20px 24px 20px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.in_Number {
+  height: 29px;
+  width: 43px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #253347;
+}
+
+.in_Text {
+  height: 29px;
+  width: 17px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #345ff6;
+}
+
+.imperial_Weight_Second_Box {
+  height: 98px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.imperial_Weight_Second_Box_Weight_Header_Text {
+  height: 21px;
+  width: 44px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5e6e85;
+}
+
+.st_Ibs_Box {
+  height: 69px;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.imperial_Weight_Second_Box_st_Box {
+  height: 30px;
+  width: 80px;
+  border-color: linear-gradient(0deg, #d8e2e7, #d8e2e7),
+    linear-gradient(0deg, #ffffff, #ffffff);
+
+  border: 1px solid #d8e2e7;
+  border-radius: 12px;
+  padding: 20px 24px 20px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.st_Number {
+  height: 29px;
+  width: 43px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #253347;
+}
+.st_Text {
+  height: 29px;
+  width: 17px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #345ff6;
+}
+.imperial_Ibs_Second_Box_Feet_Box {
+  height: 30px;
+  width: 80px;
+  border-color: linear-gradient(0deg, #d8e2e7, #d8e2e7),
+    linear-gradient(0deg, #ffffff, #ffffff);
+
+  border: 1px solid #d8e2e7;
+  border-radius: 12px;
+  padding: 20px 24px 20px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.ibs_Number {
+  height: 29px;
+  width: 43px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #253347;
+}
+
+.ibs_Text {
+  height: 29px;
+  width: 47px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #345ff6;
+}
+
 .bmi_Result_Box {
   height: 227px;
   width: 220px;
