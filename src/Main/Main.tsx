@@ -1,14 +1,73 @@
 import "./Main.css";
 import bodymassicone from "../icons/bodymassicone.svg";
 import { useState } from "react";
+import { useEffect } from "react";
 function Main() {
-  const [metric, setMetric] = useState(false);
-  const [imperial, setImperial] = useState(false);
   const [measurementSystem, setMeasurementSystem] = useState("metric");
+  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState(0);
+  const [bmi, setBmi] = useState(0);
+  const [feet, setFeet] = useState(0);
+  const [inches, setInches] = useState(0);
+  const [stones, setStones] = useState(0);
+  const [pounds, setPounds] = useState(0);
+  const [btwKg, setBtwKg] = useState(0);
+  const [btwLbs, setBtwLbs] = useState(0);
 
   const handleSystemChange = (event: any) => {
     setMeasurementSystem(event.target.value);
   };
+
+  const readCM = (event: any) => {
+    console.log(event.target.value);
+    setHeight(event.target.value);
+  };
+
+  const readWeight = (event: any) => {
+    console.log(event.target.value);
+    setWeight(event.target.value);
+  };
+
+  const readFeet = (event: any) => {
+    console.log(event.target.value);
+    setFeet(event.target.value);
+  };
+
+  const readInches = (event: any) => {
+    console.log(event.target.value);
+    setInches(event.target.value);
+  };
+
+  const readStones = (event: any) => {
+    console.log(event.target.value);
+    setStones(event.target.value);
+  };
+
+  const readPounds = (event: any) => {
+    console.log(event.target.value);
+    setPounds(event.target.value);
+  };
+
+  const calculateBMI = () => {
+    if (measurementSystem === "metric") {
+      const heightInMeters = height / 100;
+      setBmi(Math.round(weight / (heightInMeters * heightInMeters)));
+      setBtwKg(Math.round(weight - bmi));
+    } else {
+      const totalHeightInInches = feet * 12 + inches;
+      const totalWeightInPounds = stones * 14 + pounds;
+      setBmi(
+        Math.round(
+          (totalWeightInPounds / (totalHeightInInches * totalHeightInInches)) *
+            703
+        )
+      );
+    }
+  };
+
+  useEffect(() => {
+    calculateBMI();
+  }, [height, weight, feet, inches, stones, pounds]);
 
   return (
     <div className="Main_Container">
@@ -62,16 +121,24 @@ function Main() {
                 <div className="height_Metric_Box">
                   <a className="height_Metric_Box_Header">Height</a>
                   <div className="height_Metric_Box_Cm_box">
-                    <a className="height_Metric_Box_Cm_Indicator">185</a>
+                    <input
+                      className="height_Metric_Box_Cm_Indicator"
+                      type="number"
+                      onChange={readCM}
+                    />
                     <a className="height_Metric_Box_Cm_Text">cm</a>
                   </div>
                 </div>
               </div>
               <div className="metric_Height_Weight_Indicator_second_Box">
                 <div className="weight_Metric_Box">
-                  <a className="weight_Metric_Box_Header">Height</a>
+                  <a className="weight_Metric_Box_Header">Weight</a>
                   <div className="weight_Metric_Box_Cm_box">
-                    <a className="weight_Metric_Box_Cm_Indicator">80</a>
+                    <input
+                      className="weight_Metric_Box_Cm_Indicator"
+                      type="number"
+                      onChange={readWeight}
+                    />
                     <a className="weight_Metric_Box_Cm_Text">kg</a>
                   </div>
                 </div>
@@ -85,11 +152,21 @@ function Main() {
                 </a>
                 <div className="ft_In_Box">
                   <div className="imperial_Height_First_Box_Feet_Box">
-                    <a className="feet_Number">5</a>
+                    <input
+                      className="feet_Number"
+                      type="number"
+                      placeholder="0"
+                      onChange={readFeet}
+                    />
                     <a className="feet_Text">ft</a>
                   </div>
                   <div className="imperial_Height_Second_Box_Feet_Box">
-                    <a className="in_Number">11</a>{" "}
+                    <input
+                      className="in_Number"
+                      type="number"
+                      placeholder="0"
+                      onChange={readInches}
+                    />
                     <a className="in_Text">in</a>
                   </div>
                 </div>
@@ -100,11 +177,21 @@ function Main() {
                 </a>
                 <div className="st_Ibs_Box">
                   <div className="imperial_Weight_Second_Box_st_Box">
-                    <a className="st_Number">11</a>{" "}
+                    <input
+                      className="st_Number"
+                      type="number"
+                      placeholder="0"
+                      onChange={readStones}
+                    />
                     <a className="st_Text">st</a>
                   </div>
                   <div className="imperial_Ibs_Second_Box_Feet_Box">
-                    <a className="ibs_Number">4</a>{" "}
+                    <input
+                      className="ibs_Number"
+                      type="number"
+                      placeholder="0"
+                      onChange={readPounds}
+                    />
                     <a className="ibs_Text">Ibs</a>
                   </div>
                 </div>
@@ -114,11 +201,20 @@ function Main() {
           <div className="bmi_Result_Box">
             <div className="bmi_Result_Box_Number_Box">
               <a className="bmi_Result_Box_Header_text">Your BMI is...</a>
-              <a className="bmi_Result_Box_Number_text">23.4</a>
-              <a className="bmi_Result_Box_Secondary_Text">
-                Your BMI suggests you’re a healthy weight. Your ideal weight is
-                between 63.3kgs - 85.2kgs.
+              <a className="bmi_Result_Box_Number_text" placeholder="0">
+                {bmi}
               </a>
+              {measurementSystem === "metric" ? (
+                <a className="bmi_Result_Box_Secondary_Text">
+                  Your BMI suggests you’re a healthy weight. Your ideal weight
+                  is between {btwKg} - 85.2kgs.
+                </a>
+              ) : (
+                <a className="bmi_Result_Box_Secondary_Text">
+                  Your BMI suggests you’re a healthy weight. Your ideal weight
+                  is between 140lbs - 188lbs.
+                </a>
+              )}
             </div>
           </div>
         </div>
