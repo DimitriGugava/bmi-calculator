@@ -2,6 +2,15 @@ import "./Main.css";
 import bodymassicone from "../icons/bodymassicone.svg";
 import { useState } from "react";
 import { useEffect } from "react";
+import image from "../icons/image.svg";
+import image2 from "../icons/image2.svg";
+import image3 from "../icons/image3.svg";
+import image4 from "../icons/image4.svg";
+import image5 from "../icons/image5.svg";
+import image6 from "../icons/image6.svg";
+import image7 from "../icons/image7.svg";
+import image8 from "../icons/image8.svg";
+import image9 from "../icons/image9.svg";
 function Main() {
   const [measurementSystem, setMeasurementSystem] = useState("metric");
   const [height, setHeight] = useState(0);
@@ -215,6 +224,124 @@ function Main() {
                   is between 140lbs - 188lbs.
                 </a>
               )}
+            </div>
+          </div>
+        </div>
+
+        <div className="meaning_Of_Bmi_box">
+          <img className="meaning_Of_Bmi_Image" src={image} />
+          <div className="meaning_Of_Bmi_Text_Box">
+            <h1 className="meaning_Of_Bmi_Header_Text">
+              What your BMI result means
+            </h1>
+            <a className="meaning_Of_Bmi_Secondary_Text">
+              A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+              Maintaining a healthy weight may lower your chances of
+              experiencing health issues later on, such as obesity and type 2
+              diabetes. Aim for a nutritious diet with reduced fat and sugar
+              content, incorporating ample fruits and vegetables. Additionally,
+              strive for regular physical activity, ideally about 30 minutes
+              daily for five days a week.
+            </a>
+          </div>
+        </div>
+        <div className="meaningOfBmi">
+          <div className="imageContainer">
+            <img src={image2} className="icons" />
+            <div className="textContent">
+              <h1 className="headerText">Healthy eating</h1>
+              <p className="paragraphText">
+                Healthy eating promotes weight control, disease prevention,
+                better digestion, immunity, mental clarity, and mood.
+              </p>
+            </div>
+          </div>
+          <div className="imageContainer">
+            <img src={image3} className="icons" />
+            <div className="textContent">
+              <h1 className="headerText">Regular exercise</h1>
+              <p className="paragraphText">
+                Exercise improves fitness, aids weight control, elevates mood,
+                and reduces disease risk, fostering wellness and longevity.
+              </p>
+            </div>
+          </div>
+          <div className="imageContainer">
+            <img src={image4} className="icons" />
+            <div className="textContent">
+              <h1 className="headerText">Adequate sleep</h1>
+              <p className="paragraphText">
+                Sleep enhances mental clarity, emotional stability, and physical
+                wellness, promoting overall restoration and rejuvenation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="limitation_Box">
+          <div className="limitation_Box_Header">
+            <h1 className="limitation_Box_Header_Text">Limitations of BMI</h1>
+            <a className="limitation_Box_Explanation_Text">
+              Although BMI is often a practical indicator of healthy weight, it
+              is not suited for every person. Specific groups should carefully
+              consider their BMI outcomes, and in certain cases, the measurement
+              may not be beneficial to use.
+            </a>
+          </div>
+          <div className="limitation_Box_Factors_Box">
+            <div className="limitation_Box_Factors_list_Box">
+              <div className="limitation_Box_Factors_Header_Box">
+                <img src={image5} className="icons2" />
+                <h2 className="limitation_Box_Factors_Header_Text">Gender</h2>
+              </div>
+              <a className="limitation_Box_Factors_Content">
+                The development and body fat composition of girls and boys vary
+                with age. Consequently, a child's age and gender are considered
+                when evaluating their BMI.
+              </a>
+            </div>
+            <div className="limitation_Box_Factors_list_Box">
+              <div className="limitation_Box_Factors_Header_Box">
+                <img src={image6} className="icons2" />
+                <h2 className="limitation_Box_Factors_Header_Text">Age</h2>
+              </div>
+              <a className="limitation_Box_Factors_Content">
+                In aging individuals, increased body fat and muscle loss may
+                cause BMI to underestimate body fat content.
+              </a>
+            </div>
+            <div className="limitation_Box_Factors_list_Box">
+              <div className="limitation_Box_Factors_Header_Box">
+                <img src={image7} className="icons2" />
+                <h2 className="limitation_Box_Factors_Header_Text">Muscle</h2>
+              </div>
+              <a className="limitation_Box_Factors_Content">
+                BMI may misclassify muscular individuals as overweight or obese,
+                as it doesn't differentiate muscle from fat.
+              </a>
+            </div>
+            <div className="limitation_Box_Factors_list_Box">
+              <div className="limitation_Box_Factors_Header_Box">
+                <img src={image8} className="icons2" />
+                <h2 className="limitation_Box_Factors_Header_Text">
+                  Pregnancy
+                </h2>
+              </div>
+              <a className="limitation_Box_Factors_Content">
+                Expectant mothers experience weight gain due to their growing
+                baby. Maintaining a healthy pre-pregnancy BMI is advisable to
+                minimise health risks for both mother and child.
+              </a>
+            </div>
+            <div className="limitation_Box_Factors_list_Box">
+              <div className="limitation_Box_Factors_Header_Box">
+                <img src={image9} className="icons2" />
+                <h2 className="limitation_Box_Factors_Header_Text">Race</h2>
+              </div>
+              <a className="limitation_Box_Factors_Content">
+                Certain health concerns may affect individuals of some Black and
+                Asian origins at lower BMIs than others. To learn more, it is
+                advised to discuss this with your GP or practice nurse.
+              </a>
             </div>
           </div>
         </div>
